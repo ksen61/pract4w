@@ -1,0 +1,22 @@
+﻿<Window x:Class="Pract44WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Pract44WPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="300">
+    <Grid Background="#FFEEBFF4">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.8*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="0.8*"/>
+        </Grid.RowDefinitions>
+        <TextBlock Foreground="#FF5E26CB" x:Name="start_message_textbox" FontStyle="Italic" HorizontalAlignment="Center" Text="Добро пожаловать в редактор теста!" TextAlignment="Center" TextWrapping="Wrap" Grid.Row="0" Margin="0,18,0,10"/>
+        <Button x:Name="ChangeTestButton" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Content="Я хочу изменить тест" Width="280" Height="75" Click="ChangeTestClick" Background="#FF4E037B" Foreground="White"/>
+        <Button x:Name="StartTestButton" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center" Content="Я хочу пройти тест" Width="280" Height="75" Click="StartTestClick" Background="#FF4E037B" Foreground="White"/>
+        <TextBlock Text="Введите пароль:" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,129,0,0" Grid.Row="2" Foreground="#FF5E26CB" />
+        <TextBox x:Name="admin_key_textbox" Grid.Row="3" HorizontalAlignment="Center" VerticalAlignment="Center" Width="280" Height="40" TextWrapping="Wrap" TextAlignment="Center" Background="#FF4E037B" Foreground="White" SelectionBrush="White"/>
+    </Grid>
+</Window>
